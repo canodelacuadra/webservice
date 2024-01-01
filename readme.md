@@ -85,7 +85,7 @@ Por supuesto, estas son solo sugerencias. Las URLs concretas que se utilicen dep
 
 
 
-### Paso 2
+### Futuros Pasos
 1. Validación de datos
 ### Paso 3 Autenticación y Autorización
 1. los usuarios puedan buscar, listar, crear, editar, añadir, ver, descargar  y eliminar recursos multimedia

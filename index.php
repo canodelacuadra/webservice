@@ -1,5 +1,4 @@
 <?php
 require_once('functions.php');
+require_once('routes.php');
 
-echo json_encode(getResources());
-//echo json_encode(getResource(1));

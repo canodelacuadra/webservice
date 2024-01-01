@@ -1,6 +1,12 @@
-<IfModule mod_rewrite.c>
+ <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-d
+    # Al no estar en el directorio raiz, si estuviera sería /
+    RewriteBase /webservice/
+
+    # Si la solicitud no es un archivo existente
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+    # Si la solicitud no es un directorio existente
+    RewriteCond %{REQUEST_FILENAME} !-d
+    # Redirigir todas las solicitudes a index.php
+    RewriteRule ^ index.php [L]
 </IfModule>
