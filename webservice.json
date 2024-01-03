@@ -1,0 +1,34 @@
+{
+  "nombre": "Servicio de administración de Recursos multimedia",
+  "version": 1,
+  "descripcion": "Este servicio permite administrar resources multimedia",
+  "resources": [
+    {
+      "nombre": "Un recurso multimedia",
+      "tipo": "imagenes, video o sonido",
+      "descripcion": "Una colección de resources sobre nuestro patrimonio",
+      "rutas": [
+        {
+          "metodo": "POST",
+          "ruta": "/resources/add.php"
+        },
+        {
+          "metodo": "PUT",
+          "ruta": "/resources/update.php?id={id}"
+        },
+        {
+          "metodo": "DELETE",
+          "ruta": "/resources/delete.php?id={id}"
+        },
+        { 
+          "metodo": "GET",
+          "ruta": "/resources/list.php"
+        },
+         {
+          "metodo": "GET",
+          "ruta": "/resources/show.php?id={id}"
+        }
+      ]
+    }
+  ]
+}

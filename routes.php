@@ -31,6 +31,11 @@ $router->addRoute('/webservice/resources/id/(\d+)', function ($id) {
     $resource= getResource($id);
     echo json_encode($resource);
 });
+$router->addRoute('/http://localhost/webservice/resources/add', function () {
+    $data = json_decode(file_get_contents('php://input'), true);
+    $nombre = $data['nombre'];
+    echo $nombre;
+});
 
 
 // Manejar la solicitud
